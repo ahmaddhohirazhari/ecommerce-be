@@ -1,0 +1,32 @@
+<!-- src/templates/payment-success.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Payment Confirmed</h1>
+      <p>Hello {{customerName}},</p>
+      <p>
+        Your payment for order <strong>#{{orderId}}</strong> has been
+        successfully processed.
+      </p>
+
+      <h3>Payment Details</h3>
+      <p><strong>Amount:</strong> {{amount}}</p>
+      <p><strong>Method:</strong> {{paymentMethod}}</p>
+      <p><strong>Date:</strong> {{transactionDate}}</p>
+
+      <p>Thank you for shopping with us!</p>
+    </div>
+  </body>
+</html>

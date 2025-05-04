@@ -1,0 +1,36 @@
+<!-- src/templates/order-status-update.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .status-change {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Order Status Update</h2>
+      <p>Your order <strong>#{{orderId}}</strong> status has been updated.</p>
+
+      <div class="status-change">
+        <p>Changed from: <strong>{{previousStatus}}</strong></p>
+        <p>To: <strong>{{newStatus}}</strong></p>
+      </div>
+
+      <p>Date: {{updateDate}}</p>
+      <p>Thank you for shopping with us!</p>
+    </div>
+  </body>
+</html>

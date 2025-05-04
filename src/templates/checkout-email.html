@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Thank you for your order, {{customerName}}!</h1>
+      <p>Order ID: <strong>{{orderId}}</strong></p>
+      <p>Date: {{orderDate}}</p>
+
+      <h3>Order Summary</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{items}}
+        </tbody>
+      </table>
+
+      <p><strong>Total Amount:</strong> {{totalAmount}}</p>
+      <p><strong>Payment Method:</strong> {{paymentMethod}}</p>
+      <p><strong>Shipping Address:</strong> {{shippingAddress}}</p>
+    </div>
+  </body>
+</html>
